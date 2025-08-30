@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#happy{
+  
+  background-color: #ffe066;
+}
+
+#sad {
+  background-color: #74c0fc;
+}
+
+#angry {
+  background-color: #ff6b6b;
+}
+
+#love {
+  background-color: #ff8787;
+}
+
+#Cool {
+  background-color: #a5d8ff;
+}
+#funny {
+    background-color: #a23;
+}
+#happy:hover{
+    transform: scale(1.1);
+}
+#sad:hover{
+    background-color: #a5d8ff;
+    color: #a23;
+    transform: scale(1.1);
+}
+#angry:hover{
+    box-shadow: 0 0 15px rgba(255, 200, 0, 0.8);
+    transform: scale(1.1);
+} 
+#love:hover{
+    transform: rotate(3deg);
+}
+#Cool:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+#funny:hover {
+    transform: scale(1.1);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+#messageArea{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #444;
+}
+#suggestions {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.animate {
+    animation: bounce 0.5s ease;
+}
+
+@media (max-width: 600px) {
+    .moods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moodBtn {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
